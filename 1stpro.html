@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Web Programming - First project (HTML only)</title>
+</head>
+<body bgcolor="#14506a" text="#d6f0f5" link="#d6f0f5" vlink="#d6f0f5">
+
+<div align="right">
+  <button>Sign up</button>
+  <button>Login</button>
+  <button>Contact us</button>
+</div>
+<hr color="#ffffff" size="1" noshade><hr color="#ffffff" size="1" noshade>
+
+<table width="100%" border="2" bordercolor="#8b1a2b" cellpadding="12" cellspacing="0">
+  <tr align="center">
+    <td><b>Home</b></td>
+    <td>Latest News</td>
+    <td>Contact us</td>
+    <td>Project Resource</td>
+    <td>Feedback</td>
+    <td>Group Member</td>
+  </tr>
+</table>
+<hr color="#ffffff" size="1" noshade><hr color="#ffffff" size="1" noshade>
+
+<table width="100%" border="2" bordercolor="#8b1a2b" cellpadding="0" cellspacing="0" id="home">
+  <tr>
+    <td colspan="3" align="center"><h1><font size="7" face="Times New Roman">Welcome to Web Programming first class work. &#128514;</font></h1></td>
+  </tr>
+  <tr align="center">
+    <td width="33%"><img src="images/dorm.jpg" alt="Dormitory building" width="100%" height="250"></td>
+    <td width="33%"><i>Create the Web Page with HTML. Using any CSS is impossible</i></td>
+    <td width="33%"><img src="images/workshop.jpg" alt="University campus" width="100%" height="250"></td>
+  </tr>
+</table>
+<hr color="#ffffff" size="1" noshade><hr color="#ffffff" size="1" noshade>
+
+<table width="97%" border="2" bordercolor="#8b1a2b" cellpadding="40" cellspacing="0">
+  <tr>
+    <td>
+      <small>
+      J imma is the largest city in <b>southwestern <a href="https://en.wikipedia.org/wiki/Oromia_Region">Oromia Region</a>, Ethiopia.</b>
+      Jimma has a <b><i>latitude</i></b> and <b><i>longitude</i></b> of 7<sup>&deg;</sup>40<sup>&Prime;</sup>N 36<sup>&deg;</sup>50<sup>&Prime;</sup>E.
+      The <mark>average temperature in Jimma town</mark> ranges from 20 &deg;C to 33 &deg;C throughout the year.
+      </small>
+    </td>
+  </tr>
+</table>
+
+<table width="97%" border="2" bordercolor="#8b1a2b" cellpadding="10" cellspacing="0">
+  <tr>
+    <th align="left" width="50%"><i><u><font size="5">List of Jimma town kebeles:</font></u></i></th>
+    <th align="left" width="50%"><i><u><font size="5">Five Kingdom of Jimma:</font></u></i></th>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li>Bosa Addis</li>
+        <li>Bocho Bore</li>
+        <li>Ginjo Giduru</li>
+        <li>Hirmata</li>
+        <li>Addis Ketama</li>
+      </ul>
+    </td>
+    <td>
+      <ol>
+        <li>Jimma</li>
+        <li>Guma</li>
+        <li>Gomma</li>
+        <li>Gera</li>
+        <li>Limmu Ennarya</li>
+      </ol>
+    </td>
+  </tr>
+</table>
+<hr color="#ffffff" size="1" noshade><hr color="#ffffff" size="1" noshade>
+
+<form action="#" method="post">
+<table align="center" width="50%" border="2" bordercolor="#8b1a2b" cellpadding="8" cellspacing="4">
+  <tr>
+    <td colspan="2" align="center"><font size="6"><u>Fill the following form</u></font></td>
+  </tr>
+  <tr>
+    <td><font size="6"><label for="fullname">Full Name</label></font></td>
+    <td><input type="text" id="fullname" name="fullname" placeholder="Full Name"></td>
+  </tr>
+  <tr>
+    <td><font size="6"><label for="sid">Student ID</label></font></td>
+    <td><input type="text" id="sid" name="sid" placeholder="Student ID"></td>
+  </tr>
+  <tr>
+    <td><font size="6">Gender</font></td>
+    <td><font size="6">
+      <input type="radio" name="gender" id="f" value="Female"><label for="f">Female</label>
+      <input type="radio" name="gender" id="m" value="Male"><label for="m">Male</label>
+    </font></td>
+  </tr>
+  <tr>
+    <td><font size="6"><label for="email">Email Address</label></font></td>
+    <td><input type="email" id="email" name="email" placeholder="Email Address"></td>
+  </tr>
+  <tr>
+    <td><font size="6"><label for="phone">Phone Number</label></font></td>
+    <td><input type="tel" id="phone" name="phone" placeholder="Phone Number"></td>
+  </tr>
+  <tr>
+    <td><font size="6"><label for="dob">Birth Date</label></font></td>
+    <td><input type="date" id="dob" name="dob"></td>
+  </tr>
+  <tr>
+    <td><font size="6"><label for="dept">Department</label></font></td>
+    <td>
+      <select id="dept" name="dept">
+        <option value="">Select Your Department</option>
+        <option>Software Engineering</option>
+        <option>Computer Science</option>
+        <option>Information Technology</option>
+        <option>Civil Engineering</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td><font size="6">Which field are you interested?</font></td>
+    <td><font size="6">
+      <input type="checkbox" name="field" value="SE" id="c1"><label for="c1">Software Engineering</label><br>
+      <input type="checkbox" name="field" value="AI" id="c2"><label for="c2">Artificial Intelligence</label><br>
+      <input type="checkbox" name="field" value="DS" id="c3"><label for="c3">Data Science</label><br>
+      <input type="checkbox" name="field" value="CE" id="c4"><label for="c4">Civil Engineering</label>
+    </font></td>
+  </tr>
+  <tr>
+    <td><font size="6">Upload Picture</font></td>
+    <td><input type="file" name="picture" accept="image/*"></td>
+  </tr>
+  <tr>
+    <td><font size="6"><label for="user">Username</label></font></td>
+    <td><input type="text" id="user" name="user" placeholder="Username"></td>
+  </tr>
+  <tr>
+    <td><font size="6"><label for="pass">Password</label></font></td>
+    <td><input type="password" id="pass" name="pass" placeholder="Password"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td><input type="submit" value="Submit"> <input type="reset" value="Clear"></td>
+  </tr>
+</table>
+</form>
+<hr color="#ffffff" size="1" noshade><hr color="#ffffff" size="1" noshade>
+
+<table width="100%" border="2" bordercolor="#8b1a2b" cellpadding="2" cellspacing="0">
+  <tr align="center">
+    <th height="60"><u><font size="5">Follow us</font></u></th>
+    <th><u><font size="5">Quick list</font></u></th>
+    <th><u><font size="5">External link</font></u></th>
+    <th><u><font size="5">Contact us</font></u></th>
+  </tr>
+  <tr align="center"><td>Facebook</td><td>Home page</td><td>Learning HTML</td><td>LinkedIn</td></tr>
+  <tr align="center"><td>Instagram</td><td>Project Resource</td><td>Learning CSS</td><td>ww.3rdyear.com</td></tr>
+  <tr align="center"><td>LinkedIn</td><td>Latest news</td><td>Learning JS</td><td>+25191000000</td></tr>
+  <tr align="center"><td>Twitter</td><td>Contact us</td><td>Learning React js</td><td>3rdyear@gmail.com</td></tr>
+  <tr align="center">
+    <td colspan="4"><font color="#e58fe5">Our address @ Vernero Building</font></td>
+  </tr>
+  <tr align="center">
+    <td colspan="4"><font color="#e58fe5">&copy; 2024 3<sup>rd</sup> Year Software Student &trade;</font></td>
+  </tr>
+</table>
+
+</body>
+</html>

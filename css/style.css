@@ -1,0 +1,139 @@
+  :root {
+    --bg: #14506a;
+    --text: #d6f0f5;
+    --border: #8b1a2b;
+    --accent: #e58fe5;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 4px;
+    background: var(--bg); color: var(--text);
+    font-family: "Times New Roman", Times, serif;
+  }
+  a { color: var(--text); text-decoration: none; }
+hr {
+  height: 4px;
+  border: 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  margin: 8px 0;
+}
+  td, th { border: 2px solid var(--border); }
+  table { border-collapse: collapse; }
+
+  .top-buttons { text-align: right; }
+  .top-buttons button { font-size: 12px; padding: 1px 6px; margin-left: 2px; }
+
+  nav { display: flex; border: 2px solid var(--border); }
+  nav a {
+    flex: 1; text-align: center; padding: 14px 8px;
+    font-size: 21px; border-right: 2px solid var(--border);
+  }
+  nav a:last-child { border-right: 0; }
+  nav a.active { font-weight: bold; }
+
+  .welcome { border: 2px solid var(--border); }
+  .welcome h1 { margin: 0; padding: 6px; text-align: center; font-weight: normal; font-size: 40px; }
+  .gallery { display: grid; grid-template-columns: 1fr 0.9fr 1fr; }
+  .gallery > * { border: 2px solid var(--border); min-height: 250px; }
+  .gallery img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .tagline {
+    display: flex; align-items: center; justify-content: center;
+    text-align: center; font-style: italic; font-size: 21px; padding: 0 40px;
+  }
+
+  .about {
+    width: 97%; border: 2px solid var(--border);
+    padding: 55px 14px; font-size: 12px; margin-top: 8px;
+  }
+  .about a { color: #9fd3e8; font-weight: bold; }
+  .about mark { background: yellow; color: #000; }
+
+  .lists { width: 97%; table-layout: fixed; }
+  .lists th {
+    text-align: left; padding: 10px; font-size: 24px;
+    font-style: italic; text-decoration: underline;
+  }
+  .lists td { padding: 10px 10px 10px 14px; font-size: 20px; }
+  .lists ul, .lists ol { margin: 8px 0; padding-left: 40px; }
+
+  .form-table {
+    width: 50%; min-width: 330px; margin: 10px auto;
+    border: 2px solid var(--border);
+    border-collapse: separate; border-spacing: 8px;
+  }
+  .form-table td { padding: 6px 10px; font-size: 28px; }
+  .form-table .title { text-align: center; text-decoration: underline; }
+  .form-table input[type="text"],
+  .form-table input[type="email"],
+  .form-table input[type="tel"],
+  .form-table input[type="password"] {
+    width: 200px; font-size: 12px; padding: 1px 2px; border: 1px solid #888;
+  }
+  .options label { display: block; line-height: 1.1; }
+  .inline label { margin-right: 6px; }
+  .btns button { font-size: 12px; padding: 1px 6px; }
+
+  footer table { width: 100%; }
+  footer th { height: 70px; font-size: 24px; text-decoration: underline; }
+  footer td { text-align: center; padding: 0 2px; font-size: 18px; }
+  footer td.note { color: var(--accent); }
+
+ @media (max-width: 900px) {
+  nav { display: flex; border: 2px solid var(--border); }
+  nav a { flex: 1; display: flex; align-items: center; justify-content: center;
+          text-align: center; font-size: clamp(12px, 3.6vw, 18px);
+          line-height: 1.15; padding: 12px 3px;
+          border-right: 2px solid var(--border); border-bottom: 0; }
+  nav a:last-child { border-right: 0; }
+
+  .welcome h1 { font-size: clamp(28px, 9vw, 48px); font-weight: bold;
+                padding: 16px 10px; line-height: 1.15; }
+  .gallery { grid-template-columns: 1fr 1fr 1fr; }
+  .gallery > * { min-height: 120px; }
+  .gallery img { height: 100%; }
+  .gallery .tagline { padding: 6px; font-size: clamp(13px, 3.6vw, 18px); }
+
+  .about { width: 100%; padding: 30px 14px; font-size: clamp(13px, 3.6vw, 16px); }
+  .lists { width: 100%; }
+  .lists th { font-size: clamp(16px, 5vw, 24px); padding: 10px; }
+  .lists td { font-size: clamp(15px, 4.5vw, 20px); padding: 10px; }
+  .lists ul, .lists ol { padding-left: 26px; }
+
+  .form-table { width: 100%; min-width: 0; border-spacing: 4px; }
+  .form-table td { font-size: clamp(16px, 4.8vw, 24px); padding: 4px 6px; }
+  .form-table input[type="text"],
+  .form-table input[type="email"],
+  .form-table input[type="tel"],
+  .form-table input[type="password"] { width: 100%; font-size: 14px; }
+
+  .tiles { grid-template-columns: 1fr; }
+  footer th { font-size: clamp(13px, 4vw, 20px); height: 44px; }
+  footer td { font-size: clamp(11px, 3.2vw, 16px); }
+}
+  nav a:last-child { border-right: 0; }
+
+  .welcome h1 { font-size: clamp(28px, 9vw, 48px); font-weight: bold;
+                padding: 16px 10px; line-height: 1.15; }
+  .gallery { grid-template-columns: 1fr 1fr 1fr; }
+  .gallery > * { min-height: 120px; }
+  .gallery img { height: 100%; }
+  .gallery .tagline { padding: 6px; font-size: clamp(13px, 3.6vw, 18px); }
+
+  .about { width: 100%; padding: 30px 14px; font-size: clamp(13px, 3.6vw, 16px); }
+  .lists { width: 100%; }
+  .lists th { font-size: clamp(16px, 5vw, 24px); padding: 10px; }
+  .lists td { font-size: clamp(15px, 4.5vw, 20px); padding: 10px; }
+  .lists ul, .lists ol { padding-left: 26px; }
+
+  .form-table { width: 100%; min-width: 0; border-spacing: 4px; }
+  .form-table td { font-size: clamp(16px, 4.8vw, 24px); padding: 4px 6px; }
+  .form-table input[type="text"],
+  .form-table input[type="email"],
+  .form-table input[type="tel"],
+  .form-table input[type="password"] { width: 100%; font-size: 14px; }
+
+  .tiles { grid-template-columns: 1fr; }
+  footer th { font-size: clamp(13px, 4vw, 20px); height: 44px; }
+  footer td { font-size: clamp(11px, 3.2vw, 16px); }
+}
