@@ -8,7 +8,7 @@
     min-height: clamp(28rem, 54vw, 42rem);
     background:
         linear-gradient(90deg, rgba(12, 20, 18, 0.82), rgba(12, 20, 18, 0.18)),
-        url("../image/East Africa.jpg") center / cover no-repeat;
+        url("../image/East-Africa.jpg") center / cover no-repeat;
 }
 
 .hero-title {
