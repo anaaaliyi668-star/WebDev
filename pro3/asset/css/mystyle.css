@@ -1,0 +1,117 @@
+:root {
+    --bs-dark-rgb: 21, 26, 31;
+    --bs-secondary-rgb: 34, 42, 50;
+    --bs-warning-rgb: 226, 168, 75;
+}
+
+.hero {
+    min-height: clamp(28rem, 54vw, 42rem);
+    background:
+        linear-gradient(90deg, rgba(12, 20, 18, 0.82), rgba(12, 20, 18, 0.18)),
+        url("../image/East Africa.jpg") center / cover no-repeat;
+}
+
+.hero-title {
+    margin: 0;
+    font-size: clamp(2.7rem, 8vw, 6rem);
+    line-height: 1.02;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.4);
+}
+
+.hero .hero-title.text-warning {
+    color: #f2bd65 !important;
+}
+
+.hero-cta {
+    border: 0;
+    background-color: #f2bd65;
+    color: #171a1d;
+}
+
+.hero-cta:hover,
+.hero-cta:focus {
+    background-color: #f2bd65;
+    color: #171a1d;
+}
+
+.navbar-brand {
+    font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+}
+
+.navbar .nav-link {
+    font-variant: small-caps;
+}
+
+.section-heading-link,
+.contact-title {
+    transition: text-shadow 180ms ease;
+}
+
+.section-heading-link:hover,
+.contact-title:hover {
+    text-shadow: 10px 10px 30px rgb(224, 220, 220);
+}
+
+.adventure-readmore:hover {
+    background-color: #e2a84b !important;
+    color: #171a1d !important;
+}
+
+.adventure-image {
+    width: min(100%, 13rem);
+}
+
+.card {
+    transition: border-color 180ms ease, background-color 180ms ease, transform 180ms ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(226, 168, 75, 0.55) !important;
+    background-color: #29343d !important;
+}
+
+#packages .card:hover {
+    border-width: 2px !important;
+}
+
+.card-text {
+    color: #c3cad5;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.package-image img {
+    display: block;
+    width: 100%;
+    height: clamp(12rem, 22vw, 16rem);
+}
+
+.contact-content {
+    width: min(100%, 64rem);
+}
+
+.contact-title {
+    font-size: clamp(2rem, 3vw, 2.5rem);
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+    text-transform: capitalize;
+    color: #c3cad5;
+    opacity: 1;
+}
+
+#contact input::-webkit-input-placeholder,
+#contact textarea::-webkit-input-placeholder {
+    color: #c3cad5;
+    opacity: 1;
+}
+
+.site-footer {
+    background-color: #101418 !important;
+}
+
+.footer-credits {
+    width: min(100%, 36rem);
+}
